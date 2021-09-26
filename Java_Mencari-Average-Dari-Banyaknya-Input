@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class UjianSoal1 {
+	public static void main(String[] args) {
+//		================== Abdulloh ====================
+
+		Scanner sn = new Scanner(System.in);
+		System.out.println("Input:");
+		System.out.println("Masukkan angka sepuasnya. Jika sudah puas masukkan X: ");
+		double total = 0;
+		double  max = 0;
+		int count =0;
+		double average = 0;
+    
+    
+		while (sn.hasNextDouble()) {
+			double angkaMasukan = sn.nextDouble(); 
+			total = total + angkaMasukan;
+			count = count +1;
+			average = total/count;
+		}
+    // ===================== Keterangan ===================
+    // sn.hasNextDouble() adalah jika inputannya bernilai Double
+    // double angkaMasukan = sn.nextDouble();  = ketika angka di masukan maka angka tersebut masuk ke angkaMasukan dengan tipe data Double
+    // =================== End Keterangan ===================
+    
+		System.out.println("Output:");
+		System.out.print("Rata-rata: "+average);
+		
+//		==================== End =======================	
+	}
+}
